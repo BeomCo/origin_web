@@ -196,6 +196,9 @@
     header .container .logo a img{
         height: 4.2rem;
     }
+    header .container nav{
+        height: auto;
+    }
     header .container nav > ul{
         padding: 2rem;
         flex-direction: column;
