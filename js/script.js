@@ -1,22 +1,22 @@
 const downArrow = document.querySelector(".sns ul li:nth-child(1)");
-const mainSection = document.querySelector(".main").offsetTop;
-let width = document.querySelector("html").scrollWidth;
+let width = document.querySelector("html").offsetWidth;
 // console.log(width);
 // console.log(downArrow);
 
 addEventListener('resize', ()=>{
-    width = document.querySelector("html").scrollWidth;
+    width = document.querySelector("html").offsetWidth;
 });
 
 
 function clickDownScroll(e){
     // e.preventDefault();
-    window.scroll({top:mainSection, behavior: 'smooth'})
+    const mainSection = document.querySelector(".main").offsetTop;
+    window.scroll({top:mainSection, behavior: 'smooth'});
 }
 
 downArrow.addEventListener('click', (e)=>{
-    e.preventDefault();
-    if(width >= 767){
+    if(width <= 767){
+        e.preventDefault();
         clickDownScroll();
-    }
+    };
 })
