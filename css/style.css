@@ -74,6 +74,7 @@ header .container nav ul li:hover a{
     background-color: #fff;
     color: #6AB3B2;
     box-shadow: inset 0px 0px 25px -10px #000000;
+    transition: box-shadow 0.3s, color 0.3s, background-color 0.3s;
 }
 
 header .container .sns{
@@ -206,7 +207,7 @@ section .main .box .cover{
 section .main .box:hover .cover{
     opacity: 1;
     z-index: 1;
-    transition: 0.25s;
+    transition: opacity 0.3s;
 }
 
 section .main .box .cover .cont{

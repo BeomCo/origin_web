@@ -33,6 +33,7 @@
     }
     header .container nav{
         width: auto;
+        height: 60px;
     }
     header .container nav > ul{
         display: flex;
@@ -73,7 +74,7 @@
     }
     header .container nav > ul > li:hover a:after{
         width: 100%;
-        transition: width 0.25s;
+        transition: width 0.3s;
     }
     header .container nav > ul li:hover a{
         background-color: #6ab3b2;
