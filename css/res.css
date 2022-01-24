@@ -184,6 +184,10 @@
         filter: brightness(0) invert(1);;
         opacity: 0.8;
     }
+    header .container .sns ul li:nth-of-type(1):hover a{
+        filter: brightness(100%) invert(0);;
+        opacity: 1;
+    }
     header .container .sns ul li:nth-of-type(2) a, header .container .sns ul li:nth-of-type(3) a
     {
         display: none;
@@ -220,6 +224,7 @@
         background-color: transparent;
         color: #6ab3b2;
         border-color: #6ab3b2;
+        transition: color 0.3s, border-color 0.3s;
     }
     section{
         height: calc(100vh - 20px);
@@ -300,6 +305,10 @@
     ul#navSns li:nth-of-type(3) a{
         background-image: url(../img/sns5.png);
     
+    }
+    ul#navSns li:hover a{
+        filter: invert(100%);
+        transition: filter 0.3s;
     }
 
     footer{
