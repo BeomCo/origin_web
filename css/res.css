@@ -1,3 +1,14 @@
+@media (min-width:1200px){
+    
+    section .main .box:nth-of-type(7) .cover, section .main .box:nth-of-type(11) .cover, section .main .box:nth-of-type(12) .cover{
+        justify-content: flex-start;
+    }
+
+    section .main .box:nth-of-type(7) .cover .cont, section .main .box:nth-of-type(11) .cover .cont, section .main .box:nth-of-type(12) .cover .cont{
+        width: 50%;
+    }
+    
+}
 @media (max-width:1199px){
     header{
         position: relative;
