@@ -132,7 +132,7 @@ section .main .box{
     background-size: cover;
     background-position: 50% 50%;
     position: relative;
-    min-height: 120px;
+    min-height: 140px;
     
 }
 section .main .box_1{
@@ -214,6 +214,9 @@ section .main .box .cover .cont{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
 section .main .box .cover .cont h4{
@@ -243,6 +246,11 @@ section .main .box .cover .cont a{
     padding: 0.6rem;
     background-color: #fff;
     border-radius: 50%;
+    transform: translateY(100%);
+}
+section .main .box:hover .cover .cont a{
+    transition: transform 0.5s;
+    transform: translateY(0);
 }
 section .main .box .cover .cont a img{
     display: block;
