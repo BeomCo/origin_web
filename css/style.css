@@ -1,0 +1,254 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #fff;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+ol, ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #6ab3b2;
+    box-shadow: inset 0px 0px 25px -10px #000000;
+}
+header .container{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+header .container .logo{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+header .container .logo a{}
+header .container .logo a img{
+    display: block;
+}
+header .container nav{
+    width: 100%;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+header .container nav ul{}
+header .container nav ul li{}
+header .container nav > ul > li a{
+    display: block;
+    border-bottom: 2px solid #fff;
+    padding: 1rem;
+}
+header .container nav ul li:nth-child(1) a{
+    border-top: 2px solid #fff;
+}
+
+header .container nav ul li:hover a{
+    background-color: #fff;
+    color: #6AB3B2;
+    box-shadow: inset 0px 0px 25px -10px #000000;
+}
+
+header .container .sns{
+    width: 50%;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .container .sns h3{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+header .container .sns ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .container .sns ul li{}
+header .container .sns ul li a{
+    width: 2.8rem;
+    height: 2.8rem;
+    display: inline-block;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+header .container .sns ul li:nth-of-type(1) a{
+    background-image: url(../img/sns3.png);
+}
+header .container .sns ul li:nth-of-type(2) a{
+    background-image: url(../img/sns4.png);
+}
+header .container .sns ul li:nth-of-type(3) a{
+    background-image: url(../img/sns5.png);
+
+}
+
+section{
+    width: calc(100% - 280px);
+    height: 100vh;
+    margin-left: 280px;
+    text-align: center;
+}
+
+section .main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+section .main .box{
+    width: 100%;
+    background-color: #ccc;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    min-height: 120px;
+    
+}
+section .main .box_1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+section .main .box_2{
+    grid-column: 3/4;
+}
+section .main .box_3{
+    grid-column: 4/5;
+}
+section .main .box_4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+section .main .box_5{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+section .main .box_6{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+section .main .box_7{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+section .main .box_8{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+section .main .box_9{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+section .main .box_10{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+section .main .box_11{
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+section .main .box_12{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+section .main .box_13{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+section .main .box_14{
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+section .main .box .cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 169, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: -1;
+}
+section .main .box:hover .cover{
+    opacity: 1;
+    z-index: 1;
+    transition: 0.25s;
+}
+
+section .main .box .cover .cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .main .box .cover .cont h4{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+section .main .box .cover .cont p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+section .main .box .cover .cont h5{
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+section .main .box .cover .cont .line{
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+section .main .box .cover .cont a{
+    display: block;
+    padding: 0.6rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section .main .box .cover .cont a img{
+    display: block;
+    height: 1.6rem;
+}
+/*  */
+footer{
+    display: none;
+}
