@@ -77,7 +77,7 @@
         transition: width 0.3s;
     }
     header .container nav > ul li:hover a{
-        background-color: #6ab3b2;
+        background-color: #CE662F;
         color: #fff;
         box-shadow: none;
     }
@@ -165,7 +165,7 @@
 @media (max-width:767px){
     header{
         height: 100vh;
-        background-image: url(../img/t-1-213373_640x480.jpg);
+        background-image: url(../img/berlin11.jpg);
         background-size: cover;
         background-position: 50% 50%;
         min-height: 500px;
@@ -222,8 +222,8 @@
     }
     header .container nav > ul li:hover a{
         background-color: transparent;
-        color: #6ab3b2;
-        border-color: #6ab3b2;
+        color: #CE662F;
+        border-color: #CE662F;
         transition: color 0.3s, border-color 0.3s;
     }
     section{
@@ -315,7 +315,7 @@
         display: block;
         height: 2rem;
         z-index: 1;
-        background-color: #6ab3b2;
+        background-color: #CE662F;
     }
     footer p{
         font-size: 1.2rem;
